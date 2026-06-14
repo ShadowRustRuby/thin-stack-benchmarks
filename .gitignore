@@ -1,0 +1,18 @@
+# Compiled binaries
+*_bin
+*_standalone
+*_asm_bin
+*_cpp_bin
+*_c_bin
+*_ts_bin
+
+# Object and class files
+*.o
+*.class
+
+# TLS credentials (generate your own — see README)
+server.key
+server.crt
+
+# Bun lock files
+bun.lockb
