@@ -125,7 +125,7 @@ def generate_charts():
                  fontsize=15, fontweight='bold', y=0.99)
     plt.tight_layout()
     
-    output_path = '/home/pr/vaults/writing/drafts/roi_chart.png'
+    output_path = '/home/pr/vaults/writing/attachments/roi_chart.png'
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     plt.savefig(output_path, dpi=300, bbox_inches='tight')
     print(f"Success: Chart saved to {output_path}")
