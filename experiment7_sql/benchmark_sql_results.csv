@@ -1,0 +1,4 @@
+Language,Port,Image Size,Baseline Memory,Peak Memory,Peak CPU,Avg Latency (ms),Min Latency (ms),Max Latency (ms)
+Assembly,8081,29.5MB,620KiB,1.93MiB,0.0%,16.48,5.48,36.36
+C++,8082,29.5MB,640KiB,2.496MiB,0.0%,16.65,5.30,34.92
+TypeScript,8083,146MB,8.457MiB,11.05MiB,0.43%,16.62,4.25,43.19

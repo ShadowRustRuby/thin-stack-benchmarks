@@ -25,7 +25,9 @@ The core question: if AI removes the developer bottleneck that made dynamic lang
 | 3 | `experiment3_api/` | Unsecured HTTP API server serving JSON from CSV |
 | 4 | `experiment4_secure_api/` | API server with three security tiers (4a: API key, 4b: HMAC, 4c: TLS) |
 | 5 | `experiment5_hardened_api/` | Hardened variants with buffer-overflow resistance |
-| 6 | `impact_calculations/` | NESO grid-linked Monte Carlo calculator and chart generator |
+| 6 | `experiment6_density/` | Containerized microservice gateway comparison with NGINX rate-limiting |
+| 7 | `experiment7_sql/` | Persistent connection SQLite database microservices compared side-by-side |
+| 8 | `impact_calculations/` | NESO grid-linked Monte Carlo calculator and chart generator |
 
 All experiments share the `data/records.csv` vinyl record database (10 records).
 

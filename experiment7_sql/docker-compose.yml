@@ -1,0 +1,47 @@
+services:
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "8080:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - frontend
+      - api-assembly
+      - api-cpp
+      - api-ts
+
+  frontend:
+    image: nginx:alpine
+    volumes:
+      - ./frontend:/usr/share/nginx/html:ro
+
+  api-assembly:
+    build:
+      context: ./backend_asm
+      dockerfile: Dockerfile
+    ports:
+      - "8081:8080"
+    volumes:
+      - db-data:/app/data
+
+  api-cpp:
+    build:
+      context: ./backend_cpp
+      dockerfile: Dockerfile
+    ports:
+      - "8082:8080"
+    volumes:
+      - db-data:/app/data
+
+  api-ts:
+    build:
+      context: ./backend_ts
+      dockerfile: Dockerfile
+    ports:
+      - "8083:8080"
+    volumes:
+      - db-data:/app/data
+
+volumes:
+  db-data:
