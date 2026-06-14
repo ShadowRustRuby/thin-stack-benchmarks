@@ -47,10 +47,14 @@ int parse_csv_line_c(char *line, char *artist, char *title, char *year, char *ge
     char *tok_genre  = strtok(NULL, ",");
 
     if (tok_artist && tok_title && tok_year && tok_genre) {
-        strcpy(artist, tok_artist);
-        strcpy(title, tok_title);
-        strcpy(year, tok_year);
-        strcpy(genre, tok_genre);
+        strncpy(artist, tok_artist, 127);
+        artist[127] = '\0';
+        strncpy(title, tok_title, 127);
+        title[127] = '\0';
+        strncpy(year, tok_year, 15);
+        year[15] = '\0';
+        strncpy(genre, tok_genre, 63);
+        genre[63] = '\0';
         return 1;
     }
     return 0;

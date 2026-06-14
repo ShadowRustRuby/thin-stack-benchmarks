@@ -1,8 +1,10 @@
 # Thin Stack Benchmarks
 
-Source code for the benchmark experiments in [The Return of the Thin Stack: Software in the Age of AI Synthesis](https://mantleinstitute.com/writing/).
+Source code for the benchmark experiments in:
+1. **[The Return of the Thin Stack: Software in the Age of AI Synthesis](https://mantleinstitute.com/writing/return-of-the-thin-stack)**
+2. **[Vibecoding for the Planet: Apportioning UK Cloud Carbon Footprints in the AI Era](https://mantleinstitute.com/writing/carbon-ops-roi)**
 
-All code was AI-synthesised (Claude Sonnet 4.5) from a single Saturday/Sunday session exploring the resource cost of language runtime choices.
+All code was AI-synthesised (Claude Sonnet 4.5) from a single session exploring the resource cost of language runtime choices.
 
 ---
 
@@ -23,6 +25,7 @@ The core question: if AI removes the developer bottleneck that made dynamic lang
 | 3 | `experiment3_api/` | Unsecured HTTP API server serving JSON from CSV |
 | 4 | `experiment4_secure_api/` | API server with three security tiers (4a: API key, 4b: HMAC, 4c: TLS) |
 | 5 | `experiment5_hardened_api/` | Hardened variants with buffer-overflow resistance |
+| 6 | `impact_calculations/` | NESO grid-linked Monte Carlo calculator and chart generator |
 
 All experiments share the `data/records.csv` vinyl record database (10 records).
 
@@ -89,15 +92,15 @@ The cert/key files are excluded from this repo — never commit private keys.
 
 ## Security Notes
 
-These servers are **benchmarking experiments, not production code**. Known intentional simplifications:
+These servers are **benchmarking experiments, not production code**. 
 
-- API keys and HMAC secrets are hardcoded in source (would use env vars in production)
-- No request rate limiting
-- No multi-threading / connection pooling
-- Relative file paths (`../../data/records.csv`) require running from the experiment directory
-- HMAC implementation has no replay protection (no nonce/timestamp)
+*   **Active Hardening (Experiment 5):** The servers in `experiment5_hardened_api/` have been physically hardened to fix critical vulnerabilities (stack smashes in the JSON accumulation loop by checking `json_ptr` offsets and increasing buffer allocation to 32KB; string overflows in the parser by replacing `strcpy` with safe `strncpy` bounds).
+*   **Known Architectural Simplifications:**
+    - API keys and HMAC secrets are hardcoded in source.
+    - No request rate limiting or multi-threading.
+    - No HMAC replay protection (no nonces/timestamps).
 
-See the article for the full analysis of these trade-offs.
+See the articles and [python_code_red_team.md](file:///home/pr/projects/DevLangComp/impact_calculations/python_code_red_team.md) for the full analysis of these trade-offs.
 
 ---
 

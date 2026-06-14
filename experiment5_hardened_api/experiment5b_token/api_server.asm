@@ -66,7 +66,7 @@ sockaddr_in:
 .section .bss
     .lcomm file_buffer, 8192     # 8KB buffer for storing loaded CSV file
     .lcomm client_buffer, 2048   # 2KB buffer for incoming HTTP request
-    .lcomm json_body, 4096       # 4KB buffer for building JSON output array
+    .lcomm json_body, 32768      # 32KB buffer for building JSON output array
     .lcomm header_buffer, 512    # 512B for formatting Content-Length header
     .lcomm query_string, 128     # 128B for storing extracted query
 
@@ -409,6 +409,12 @@ records_search_loop:
 
 record_matched:
     movq json_ptr, %r10          # Restore JSON write pointer
+    # Safety bounds check to prevent json_body buffer overflow
+    movq %r10, %rax
+    subq $json_body, %rax
+    cmpq $32000, %rax
+    jge finalize_json
+
     # Append comma separator if not first item
     cmpq $0, %r15
     je skip_comma

@@ -1,0 +1,275 @@
+01
+
+Executive
+Summary
+
+5
+
+Data Center Report (2026)
+
+Executive
+Summary
+This report accompanies the IDCA Digital Economy Report 2026, which was released in January 2026.
+The previous report focused on the global buildout of the Digital Economy, with an analysis of all aspects
+of digital infrastructure and its impact on societal prosperity.
+This report, in contrast, focuses solely on data centers – their consumption, their location, their national
+footprints, their design, and the considerations that businesses, governments, other organizations, and
+investors should take into account when planning new data center facilities and hubs.
+The Digital Economy Report, Data Center Report, and other IDCA reports are a product of IDCA’s global
+research team, with a presence in each of the world’s regions. IDCA’s research process scans a number
+of publicly available reports from organizations such as the International Energy Agency, World Bank,
+United Nations, and International Telecommunications, as well as agencies within the United States, EU,
+and numeros additional governmental entities.
+IDCA also receives private feedback from specific government sources globally, from major data center
+and cloud-computing operators, from developers, from investors, and from internal research.
+
+6
+
+Data Center Report (2026)
+
+02
+
+Data Center
+Overview
+
+7
+
+Data Center Report (2026)
+
+Data Center
+Overview
+Data centers have a global footprint of 67.7GW. This is a growth of 36 percent over the past two years.
+Data centers now consume 2 percent of the world’s electricity, up from 1.7 percent in 2024 and 1.9
+percent in mid-year 2025.
+The US is by far the world’s largest data center location, with 43 percent of global consumption.
+Data centers consume 29.2GW of electricity in the US, and now consume 6 percent of the nation’s
+electricity.
+The world’s other Top Five data center consumers are:
+•
+China, at 8.5GW, consuming 0.8 percent of nation’s electricity.
+•
+Germany, at 5.5GW, consuming 9.5 percent of the nation’s electricity.
+•
+UK at 2.0GW, consuming 5.8 percent of the nation’s electricity.
+•
+Japan at 1.7GW, consuming 1.5 percent of the nation’s electricity.
+IDCA’s data for the US and several other countries are higher than some traditional estimates because of
+the presence of small, room-sized data centers in use by SMEs that must be counted. These facilities are
+numerous and inefficient compared to the large, building-sized facilities and campuses.
+The continued use of smaller data centers by Mittelstand (family-owned mid-sized) companies in
+Germany increases that nation’s estimate when compared to some other results as well. Similar
+considerations apply throughout a variety of nations in IDCA’s analysis.
+Additionally, IDCA research finds that as much as 13 percent of data center consumption in the United
+States comes from unused, “zombie” cloud containers and services. This wasted consumption totals in
+excess of 3GW, comparable to the energy produced by three nuclear reactors. This sort of inefficiency is
+presumed to be apparent throughout the world, with inefficiencies increasing as the percentage of cloud
+computing rises.
+IDCA’s China analysis, on the other hand, produces data that shows a smaller footprint than some
+traditional estimates. Neither China’s government nor its major vendors or utilities are transparent in
+providing energy-use statistics. There is substantial unused capacity in China, and diverse global opinion
+of how much data center consumption exists. IDCA has revised its China estimate upwards by a couple
+of gigawatts when compared to analyses in 2025, and continues to seek optimal reporting of the nation’s
+data center footprint.
+China is an obvious sleeping giant within the world’s data center sphere. IDCA’s research shows the
+nation still devotes less than 1 percent of its energy grid to data centers. The nation now produces almost
+twice as much electricity overall as the United States, so has the potential to become a truly daunting
+consumer of data center services.
+
+8
+
+Data Center Report (2026)
+
+03
+
+Regional Usage and
+Disparities
+
+9
+
+Data Center Report (2026)
+
+Regional Usage
+and Disparities
+With the above advisories in mind, IDCA shows a regional breakdown of data center usage as shown
+below.
+
+FIGURE 1.
+
+Regional Breakdown of Data Center Footprint
+
+46%
+
+America = 31.2 GW
+
+27%
+
+Europe = 18.5 GW
+
+1%
+
+Africa = 0.52 GW
+
+25%
+
+Asia Pacific = 16.7 GW
+
+1%
+
+Middle East = 0.86 GW
+
+Source: IDCA
+
+The figures above reflect a continuing, massive disparity in data center usage throughout the world. IDCA
+finds a difference of as much as 100,000X in the density of server usage – that is, the per capita presence
+of data servers and data centers varies by as much as 100,000 times.
+
+10
+
+Data Center Report (2026)
+
+Data Server Density
+
+Log Scale
+
+FIGURE 2.
+
+Source: IDCA
+
+Nations
+
+Note: This chart is plotted on a log10 scale. Each horizontal unit increase denotes a 10X increase
+in density. The five-unit disparity between the US (to the right of the chart) and least-developed
+infrastructures (on the left) thus represents a gap of 100,000 times in the number of servers per
+population.
+The above disparity is largely a function of another disparity, that of the world’s electricity grids, which
+vary 100X in their respective strength. This large disparity continues to exist at the same time that data
+centers and related digital infrastructure are consuming and increasing proportion of those grids.
+
+FIGURE 3.
+
+Disparity of National Electricity Grids
+
+Watts per Person
+
+3,000
+
+2,000
+
+1,000
+
+0
+
+Source: IDCA
+Research
+
+Nations
+
+11
+
+Data Center Report (2026)
+
+Data center consumption can also be viewed with respect to the amount of a nation’s electricity
+it consumes. As noted above, the world as a whole has passed the 2-percent barrier in electricity
+consumption by its data centers.
+This average is not troubling in and of itself; however, it masks a very wide disparity of electricity use from
+nation to nation, and obscures the very real constraints being experienced by a variety of nations across
+income tiers.
+
+FIGURE 4.
+
+Data Center Consumption
+30,000
+
+MW
+
+20,000
+
+10,000
+
+Source: IDCA
+Research
+
+0
+
+Nations
+
+On the one hand, data centers in Singapore and the European nations of Netherlands, Germany, and
+Switzerland have exceeded the 9-percent consumption level. Data center consumption is provoking
+political and societal angst in those nations. It is also doing so in a few countries that are approaching this
+level in other European nations, including Ireland, Denmark, Lithuania, Estonia, and the UK.
+The situation is mitigated somewhat in Singapore by strong data center development in the border
+regions of Johor, Malaysia and Batam, Indonesia. But there is no such immediate relief in Europe. Over
+the longer term, the large nation of France and smaller nations such as Slovakia and Slovenia, all of which
+have very strong electricity grids driven by nuclear energy, may serve to reduce some constraints. But
+this process would be a political process and presumably take time.
+In the US, which has now reached the 6-percent level, community pushback over data center
+consumption has been seen in several regions. Data center developers in Northern Virginia, many parts
+of the Midwest, Texas, and California are finding multi-year delays in the ability to provision power for new
+data centers.
+
+12
+
+Data Center Report (2026)
+
+On the other hand, the lack of sufficient energy to meet basic needs throttles data center plans
+throughout the developing world. IDCA finds that more than 70 countries devote less than 0.1% of their
+power to data centers, with more than 30 countries devoting less than 0.01% to data centers.
+Societal improvement in the 21st century cannot occur without a healthy digital infrastructure, and data
+centers are the obvious foundation of that infrastructure. Plans by some developers to ameliorate the
+situation in developing countries by providing their own power often involve the use of fossil fuels, and
+surely do not represent a long-term development view.
+
+Data Center Consumption (log10)
+
+Log Scale
+
+FIGURE 5.
+
+Source: IDCA
+Research
+
+Nations
+
+Data Center Consumption and Expansion
+IDCA has analyzed each of the world’s nations with respect to its current data center consumption and
+its potential for expansion. The analysis involves the use of an optimized model, in which Socioeconomic
+conditions are ideal and data centers consume 6.25% of an electricity grid that is strong and powered
+95% by renewable energy.
+The optimized model takes into account the challenges facing developed nations – where energy use by
+data centers is straining grids – and developing nations, where current grids are insufficient to meet basic
+needs, let alone aggressive data center buildouts.
+
+13
+
+Data Center Report (2026)
+
+04
+
+Energy and
+Water Resources
+
+14
+
+Data Center Report (2026)
+
+Energy
+IDCA advocates the use of sustainable energy for development of new data center facilities and hubs.
+Sustainable energy includes the renewable sources of hydroelectric, wind, and solar power. It also
+includes the use of geothermal energy where it’s present, as well as the use of biomass. Green hydrogen
+represents another renewable resource, one which may be developed more fully in future years. Finally,
+nuclear energy is included as a sustainable source of energy. A full review of the world’s current use of
+sustainable energy is found in the upcoming IDCA Energy Usage Report.
+The following figure provides an overview of global energy use and its consumption by data centers.
+
+FIGURE 7.
+
+World’s Top 10 Data Center Grids (TWh)
+
+Source: IDCA
+Research
+
+15
+
+Data Center Report (2026)
+
+
