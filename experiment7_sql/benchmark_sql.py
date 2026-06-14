@@ -46,7 +46,8 @@ def run_load_test(port, num_requests=500, concurrency=10):
         container_map = {
             8081: 'experiment7_sql-api-assembly-1',
             8082: 'experiment7_sql-api-cpp-1',
-            8083: 'experiment7_sql-api-ts-1'
+            8083: 'experiment7_sql-api-ts-1',
+            8084: 'experiment7_sql-api-rust-1'
         }
         c_name = container_map[port]
         while not stop_monitoring:
@@ -109,7 +110,8 @@ def main():
     targets = [
         ('Assembly', 8081, 'experiment7_sql-api-assembly-1', 'api-assembly'),
         ('C++', 8082, 'experiment7_sql-api-cpp-1', 'api-cpp'),
-        ('TypeScript', 8083, 'experiment7_sql-api-ts-1', 'api-ts')
+        ('TypeScript', 8083, 'experiment7_sql-api-ts-1', 'api-ts'),
+        ('Rust', 8084, 'experiment7_sql-api-rust-1', 'api-rust')
     ]
     
     results = []

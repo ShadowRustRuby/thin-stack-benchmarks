@@ -10,6 +10,7 @@ services:
       - api-assembly
       - api-cpp
       - api-ts
+      - api-rust
 
   frontend:
     image: nginx:alpine
@@ -40,6 +41,15 @@ services:
       dockerfile: Dockerfile
     ports:
       - "8083:8080"
+    volumes:
+      - db-data:/app/data
+
+  api-rust:
+    build:
+      context: ./backend_rust
+      dockerfile: Dockerfile
+    ports:
+      - "8084:8080"
     volumes:
       - db-data:/app/data
 

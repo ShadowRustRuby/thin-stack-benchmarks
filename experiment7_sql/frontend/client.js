@@ -1,4 +1,4 @@
-// frontend/client.ts
+// client.ts
 var globalSearch = document.getElementById("globalSearch");
 var clientList = document.getElementById("clientList");
 var clientLatency = document.getElementById("clientLatency");
@@ -9,6 +9,8 @@ var cppList = document.getElementById("cppList");
 var cppLatency = document.getElementById("cppLatency");
 var tsList = document.getElementById("tsList");
 var tsLatency = document.getElementById("tsLatency");
+var rustList = document.getElementById("rustList");
+var rustLatency = document.getElementById("rustLatency");
 var cachedRecords = [];
 function updateClientMemory() {
   const perf = performance;
@@ -35,11 +37,13 @@ async function initialize() {
     renderList(cachedRecords, asmList);
     renderList(cachedRecords, cppList);
     renderList(cachedRecords, tsList);
+    renderList(cachedRecords, rustList);
     const loadedText = `Loaded: ${elapsed.toFixed(1)} ms`;
     clientLatency.textContent = loadedText;
     asmLatency.textContent = loadedText;
     cppLatency.textContent = loadedText;
     tsLatency.textContent = loadedText;
+    rustLatency.textContent = loadedText;
     updateClientMemory();
   } catch (error) {
     console.error("Failed to initialize SQL comparison:", error);
@@ -48,6 +52,7 @@ async function initialize() {
     asmList.innerHTML = errorHtml;
     cppList.innerHTML = errorHtml;
     tsList.innerHTML = errorHtml;
+    rustList.innerHTML = errorHtml;
   }
 }
 function filterClientSide(query) {
@@ -114,6 +119,7 @@ globalSearch.addEventListener("input", (e) => {
   fetchFromPort(val, 8081, asmList, asmLatency, "Assembly");
   fetchFromPort(val, 8082, cppList, cppLatency, "C++");
   fetchFromPort(val, 8083, tsList, tsLatency, "TypeScript");
+  fetchFromPort(val, 8084, rustList, rustLatency, "Rust");
 });
 window.addEventListener("DOMContentLoaded", () => {
   initialize();

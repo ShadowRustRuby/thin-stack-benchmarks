@@ -25,6 +25,10 @@ const cppLatency = document.getElementById('cppLatency') as HTMLSpanElement;
 const tsList = document.getElementById('tsList') as HTMLDivElement;
 const tsLatency = document.getElementById('tsLatency') as HTMLSpanElement;
 
+// 5. Rust elements
+const rustList = document.getElementById('rustList') as HTMLDivElement;
+const rustLatency = document.getElementById('rustLatency') as HTMLSpanElement;
+
 let cachedRecords: Record[] = [];
 
 // Dynamic Client Memory Heap Tracker
@@ -60,12 +64,14 @@ async function initialize() {
         renderList(cachedRecords, asmList);
         renderList(cachedRecords, cppList);
         renderList(cachedRecords, tsList);
+        renderList(cachedRecords, rustList);
 
         const loadedText = `Loaded: ${elapsed.toFixed(1)} ms`;
         clientLatency.textContent = loadedText;
         asmLatency.textContent = loadedText;
         cppLatency.textContent = loadedText;
         tsLatency.textContent = loadedText;
+        rustLatency.textContent = loadedText;
 
         updateClientMemory();
     } catch (error) {
@@ -75,6 +81,7 @@ async function initialize() {
         asmList.innerHTML = errorHtml;
         cppList.innerHTML = errorHtml;
         tsList.innerHTML = errorHtml;
+        rustList.innerHTML = errorHtml;
     }
 }
 
@@ -167,6 +174,7 @@ globalSearch.addEventListener('input', (e) => {
     fetchFromPort(val, 8081, asmList, asmLatency, 'Assembly');
     fetchFromPort(val, 8082, cppList, cppLatency, 'C++');
     fetchFromPort(val, 8083, tsList, tsLatency, 'TypeScript');
+    fetchFromPort(val, 8084, rustList, rustLatency, 'Rust');
 });
 
 // Load on start
