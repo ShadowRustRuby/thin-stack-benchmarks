@@ -31,9 +31,9 @@ All experiments share the `data/records.csv` vinyl record database (10 records).
 ## Test Hardware
 
 - **Machine:** Ubuntu Linux 24.04 LTS, x86-64
-- **CPU:** [document your CPU]
-- **RAM:** [document your RAM]
-- **Disk:** [document SSD/HDD]
+- **CPU:** Intel Core i7-11850H @ 2.50GHz (11th Gen, 8-core)
+- **RAM:** 32 GB
+- **Disk:** NVMe SSD ~954 GB
 
 Reproduce on the same architecture for comparable binary sizes. ARM (M-series Mac) will produce different numbers.
 
