@@ -4,7 +4,7 @@ Source code for the benchmark experiments in:
 1. **[The Return of the Thin Stack: Software in the Age of AI Synthesis](https://mantleinstitute.com/writing/return-of-the-thin-stack)**
 2. **[Vibecoding for the Planet: Apportioning UK Cloud Carbon Footprints in the AI Era](https://mantleinstitute.com/writing/carbon-ops-roi)**
 
-All code was AI-synthesised (Claude Sonnet 4.5) from a single session exploring the resource cost of language runtime choices.
+All code was AI-synthesised (using Gemini as the developer generating ~90% of the codebase, with Claude acting as the adversarial Red Team reviewer) from a single session exploring the resource cost of language runtime choices.
 
 ---
 
@@ -114,7 +114,7 @@ See the articles and [python_code_red_team.md](file:///home/pr/projects/DevLangC
 
 Memory was measured via `/usr/bin/time -v` (MaxRSS field). Execution time was measured via the shell `time` builtin. Results were single-run on an otherwise idle machine.
 
-All AI generation used Claude Sonnet 4.5 via the API. Token counts and costs reflect the Anthropic pricing at time of experiment.
+Code generation and structural hardening was performed primarily by Gemini (Antigravity CLI), with Claude acting as the adversarial reviewer. Token counts and costs reflect standard pricing models.
 
 ---
 
