@@ -313,94 +313,7 @@
                 </div>
             </div>
 
-            <!-- Column 2: Assembly -->
-            <div class="search-column">
-                <div class="column-header">
-                    <div class="column-title-row">
-                        <span class="column-title">Assembly API</span>
-                        <span class="column-port">Port 8081</span>
-                    </div>
-                    <!-- Inline Metrics -->
-                    <div class="column-metrics">
-                        <div class="column-metric-card">
-                            <div class="column-metric-title">Server RAM</div>
-                            <div class="column-metric-value" style="color: var(--accent-emerald);">1.37 MB</div>
-                        </div>
-                        <div class="column-metric-card">
-                            <div class="column-metric-title">Grid Saved</div>
-                            <div class="column-metric-value" style="color: var(--accent-cyan);">0.29%</div>
-                        </div>
-                        <div class="column-metric-card">
-                            <div class="column-metric-title">Img Size</div>
-                            <div class="column-metric-value" style="color: var(--primary);">102 KB</div>
-                        </div>
-                    </div>
-                    <span class="latency-badge latency-asm" id="asmLatency">Query: -- ms</span>
-                </div>
-                <div class="records-list" id="asmList">
-                    <!-- Dynamically populated -->
-                </div>
-            </div>
-
-            <!-- Column 3: C++ -->
-            <div class="search-column">
-                <div class="column-header">
-                    <div class="column-title-row">
-                        <span class="column-title">C++ API</span>
-                        <span class="column-port">Port 8082</span>
-                    </div>
-                    <!-- Inline Metrics -->
-                    <div class="column-metrics">
-                        <div class="column-metric-card">
-                            <div class="column-metric-title">Server RAM</div>
-                            <div class="column-metric-value" style="color: var(--accent-emerald);">2.42 MB</div>
-                        </div>
-                        <div class="column-metric-card">
-                            <div class="column-metric-title">Grid Saved</div>
-                            <div class="column-metric-value" style="color: var(--accent-cyan);">0.28%</div>
-                        </div>
-                        <div class="column-metric-card">
-                            <div class="column-metric-title">Img Size</div>
-                            <div class="column-metric-value" style="color: var(--primary);">156 KB</div>
-                        </div>
-                    </div>
-                    <span class="latency-badge latency-cpp" id="cppLatency">Query: -- ms</span>
-                </div>
-                <div class="records-list" id="cppList">
-                    <!-- Dynamically populated -->
-                </div>
-            </div>
-
-            <!-- Column 4: TypeScript -->
-            <div class="search-column">
-                <div class="column-header">
-                    <div class="column-title-row">
-                        <span class="column-title">TypeScript API</span>
-                        <span class="column-port">Port 8083</span>
-                    </div>
-                    <!-- Inline Metrics -->
-                    <div class="column-metrics">
-                        <div class="column-metric-card">
-                            <div class="column-metric-title">Server RAM</div>
-                            <div class="column-metric-value" style="color: var(--accent-orange);">40.4 MB</div>
-                        </div>
-                        <div class="column-metric-card">
-                            <div class="column-metric-title">Grid Saved</div>
-                            <div class="column-metric-value" style="color: var(--text-secondary);">0.00%</div>
-                        </div>
-                        <div class="column-metric-card">
-                            <div class="column-metric-title">Img Size</div>
-                            <div class="column-metric-value" style="color: var(--text-secondary);">101 MB</div>
-                        </div>
-                    </div>
-                    <span class="latency-badge latency-ts" id="tsLatency">Query: -- ms</span>
-                </div>
-                <div class="records-list" id="tsList">
-                    <!-- Dynamically populated -->
-                </div>
-            </div>
-
-            <!-- Column 5: Rust -->
+            <!-- Column 2: Rust -->
             <div class="search-column">
                 <div class="column-header">
                     <div class="column-title-row">
@@ -425,6 +338,95 @@
                     <span class="latency-badge latency-rust" id="rustLatency">Query: -- ms</span>
                 </div>
                 <div class="records-list" id="rustList">
+                    <!-- Dynamically populated -->
+                </div>
+            </div>
+
+            <!-- Column 3: Assembly -->
+            <div class="search-column">
+                <div class="column-header">
+                    <div class="column-title-row">
+                        <span class="column-title">Assembly API</span>
+                        <span class="column-port">Port 8081</span>
+                    </div>
+                    <!-- Inline Metrics -->
+                    <div class="column-metrics">
+                        <div class="column-metric-card">
+                            <div class="column-metric-title">Server RAM</div>
+                            <div class="column-metric-value" style="color: var(--accent-emerald);">1.37 MB</div>
+                        </div>
+                        <div class="column-metric-card">
+                            <div class="column-metric-title">Grid Saved</div>
+                            <div class="column-metric-value" style="color: var(--accent-cyan);">0.29%</div>
+                        </div>
+                        <div class="column-metric-card">
+                            <div class="column-metric-title">Img Size</div>
+                            <div class="column-metric-value" style="color: var(--primary);">27.0 MB</div>
+                        </div>
+                    </div>
+                    <span class="latency-badge latency-asm" id="asmLatency">Query: -- ms</span>
+                </div>
+                <div class="records-list" id="asmList">
+                    <!-- Dynamically populated -->
+                </div>
+            </div>
+
+            <!-- Column 4: C++ -->
+            <div class="search-column">
+                <div class="column-header">
+                    <div class="column-title-row">
+                        <span class="column-title">C++ API</span>
+                        <span class="column-port">Port 8082</span>
+                    </div>
+                    <!-- Inline Metrics -->
+                    <div class="column-metrics">
+                        <div class="column-metrics">
+                            <div class="column-metric-card">
+                                <div class="column-metric-title">Server RAM</div>
+                                <div class="column-metric-value" style="color: var(--accent-emerald);">2.42 MB</div>
+                            </div>
+                            <div class="column-metric-card">
+                                <div class="column-metric-title">Grid Saved</div>
+                                <div class="column-metric-value" style="color: var(--accent-cyan);">0.28%</div>
+                            </div>
+                            <div class="column-metric-card">
+                                <div class="column-metric-title">Img Size</div>
+                                <div class="column-metric-value" style="color: var(--primary);">27.0 MB</div>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="latency-badge latency-cpp" id="cppLatency">Query: -- ms</span>
+                </div>
+                <div class="records-list" id="cppList">
+                    <!-- Dynamically populated -->
+                </div>
+            </div>
+
+            <!-- Column 5: TypeScript -->
+            <div class="search-column">
+                <div class="column-header">
+                    <div class="column-title-row">
+                        <span class="column-title">TypeScript API</span>
+                        <span class="column-port">Port 8083</span>
+                    </div>
+                    <!-- Inline Metrics -->
+                    <div class="column-metrics">
+                        <div class="column-metric-card">
+                            <div class="column-metric-title">Server RAM</div>
+                            <div class="column-metric-value" style="color: var(--accent-orange);">40.4 MB</div>
+                        </div>
+                        <div class="column-metric-card">
+                            <div class="column-metric-title">Grid Saved</div>
+                            <div class="column-metric-value" style="color: var(--text-secondary);">0.00%</div>
+                        </div>
+                        <div class="column-metric-card">
+                            <div class="column-metric-title">Img Size</div>
+                            <div class="column-metric-value" style="color: var(--text-secondary);">146.0 MB</div>
+                        </div>
+                    </div>
+                    <span class="latency-badge latency-ts" id="tsLatency">Query: -- ms</span>
+                </div>
+                <div class="records-list" id="tsList">
                     <!-- Dynamically populated -->
                 </div>
             </div>
